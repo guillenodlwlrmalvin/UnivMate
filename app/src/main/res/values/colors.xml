@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Pure white (unchanged) -->
+    <color name="white">#FFFFFF</color>
+
+    <!-- Updated purple to more academic tone -->
+    <color name="purple_500">#6A4C93</color>
+
+    <!-- Primary color now a professional blue -->
+    <color name="primary">#2E5AAC</color>
+
+    <!-- Card background (unchanged white) -->
+    <color name="card_background">#FFFFFFFF</color>
+
+    <!-- Input text border/icon color -->
+    <color name="input_text">#6C757D</color>
+
+    <!-- Button color now complementary teal -->
+    <color name="button_color">#00B4B3</color>
+
+    <!-- Dark text for contrast (unchanged) -->
+    <color name="button_text">#070000</color>
+
+    <!-- Hint text now medium gray -->
+    <color name="text_hint">#6C757D</color>
+    <color name="success_green">#28A745</color>
+    <color name="warning_yellow">#FFC107</color>
+    <color name="error_red">#DC3545</color>
+</resources>
