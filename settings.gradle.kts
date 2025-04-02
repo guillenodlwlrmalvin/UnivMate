@@ -11,6 +11,7 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -18,8 +19,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-// In your project-level build.gradle file
-
 
 rootProject.name = "UnivMate"
 include(":app")

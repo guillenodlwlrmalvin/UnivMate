@@ -1,23 +1,23 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.google.gms.google.services)
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services") // Removed apply false - needed for app module
 }
 
 android {
     namespace = "com.example.univmate"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.univmate"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
-
-
 
     buildTypes {
         release {
@@ -28,43 +28,57 @@ android {
             )
         }
     }
+
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
-    buildToolsVersion = "36.0.0"
+
+    kotlinOptions {
+        jvmTarget = "17" // Required when using Kotlin
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
-    // Firebase dependencies
-    implementation (platform("com.google.firebase:firebase-bom:32.7.3"))// Ensures all Firebase dependencies use compatible versions
-    implementation(libs.firebase.auth)
-    implementation(libs.firebase.firestore)
-    implementation(libs.firebase.database)
-    implementation(libs.firebase.storage)
-    implementation(libs.firebase.messaging)
-    implementation(libs.firebase.inappmessaging.display)
+    // Firebase BOM (Bill of Materials)
+    implementation(platform("com.google.firebase:firebase-bom:32.7.3"))
+    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-firestore-ktx")
+    implementation("com.google.firebase:firebase-database-ktx")
+    implementation("com.google.firebase:firebase-storage-ktx")
+    implementation("com.google.firebase:firebase-messaging-ktx")
+    implementation("com.google.firebase:firebase-inappmessaging-display-ktx")
 
-    // AndroidX & UI Components
-    implementation(libs.appcompat)
-    implementation(libs.material)
-    implementation(libs.activity)
-    implementation(libs.constraintlayout)
+    // AndroidX Core
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.activity:activity-ktx:1.8.2")
 
-    // Kotlin Coroutines (For better async handling)
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    // Lifecycle components
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 
-    // Lifecycle components (For MVVM architecture and LiveData)
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
-    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
-    implementation(libs.androidx.activity)
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
 
-    // Testing Dependencies
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.ext.junit)
-    androidTestImplementation(libs.espresso.core)
+    // UI Components
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.drawerlayout:drawerlayout:1.2.0")
 
-    // Play Services (Optional, but useful for Firebase)
-    implementation ("com.google.android.material:material:1.9.0")
-    implementation ("com.google.android.gms:play-services-auth:20.7.0")// Google Sign-In
+    // Play Services
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+    implementation("com.google.android.gms:play-services-base:18.3.0")
+
+    // Testing
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }

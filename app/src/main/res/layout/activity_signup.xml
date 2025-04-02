@@ -8,7 +8,7 @@
     android:background="@color/primary"
     tools:context=".SignupActivity">
 
-    <!-- Back Button - Improved touch target -->
+    <!-- Back Button -->
     <ImageView
         android:id="@+id/btnBack"
         android:layout_width="48dp"
@@ -19,7 +19,6 @@
         android:clickable="true"
         android:contentDescription="@string/back_button_description"
         android:focusable="true"
-        android:focusableInTouchMode="true"
         android:padding="12dp"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,172 +46,204 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/signup_description"
-        android:textAlignment="center"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSignUpTitle" />
 
-    <!-- Signup Card - Improved accessibility -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/signupCard"
+    <!-- ScrollView to handle long forms -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        app:cardBackgroundColor="@color/card_background"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/loginPrompt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSignUpSubtitle">
 
-        <LinearLayout
+        <!-- Signup Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/signupCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
 
-            <!-- Full Name Input - Improved touch target -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputFullName"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:hint="@string/full_name"
-                android:minHeight="60dp"
-                android:textColorHint="@color/text_hint"
-                app:boxStrokeColor="@color/button_text"
-                app:hintTextColor="@color/button_text"
-                app:startIconDrawable="@drawable/ic_person"
-                app:startIconTint="@color/button_text">
+                android:orientation="vertical"
+                android:padding="16dp">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edtFullName"
+                <!-- Full Name Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputFullName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/button_text" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:hint="@string/full_name"
+                    android:textColorHint="@color/text_hint"
+                    app:boxStrokeColor="@color/button_text"
+                    app:hintTextColor="@color/button_text"
+                    app:startIconDrawable="@drawable/ic_profile"
+                    app:startIconTint="@color/button_text">
 
-            <!-- Email Input - Improved touch target -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputEmail"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:hint="@string/email"
-                android:minHeight="60dp"
-                android:textColorHint="@color/text_hint"
-                app:boxStrokeColor="@color/button_text"
-                app:hintTextColor="@color/button_text"
-                app:startIconDrawable="@drawable/ic_email"
-                app:startIconTint="@color/button_text">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/button_text" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edtEmail"
+                <!-- Email Input (NEWLY ADDED) -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputEmail"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:inputType="textEmailAddress"
-                    android:textColor="@color/button_text" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:hint="Email"
+                    android:textColorHint="@color/text_hint"
+                    app:boxStrokeColor="@color/button_text"
+                    app:hintTextColor="@color/button_text"
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="@color/button_text">
 
-            <!-- Password Input - Improved touch target -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputPassword"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:hint="@string/password"
-                android:minHeight="60dp"
-                android:textColorHint="@color/text_hint"
-                app:boxStrokeColor="@color/button_text"
-                app:endIconMode="password_toggle"
-                app:endIconTint="@color/button_text"
-                app:hintTextColor="@color/button_text"
-                app:startIconDrawable="@drawable/ic_lock"
-                app:startIconTint="@color/button_text">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/button_text" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edtPassword"
+                <!-- Username Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputUsername"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:inputType="textPassword"
-                    android:textColor="@color/button_text" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:hint="Username"
+                    android:textColorHint="@color/text_hint"
+                    app:boxStrokeColor="@color/button_text"
+                    app:hintTextColor="@color/button_text"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/button_text">
 
-            <!-- Confirm Password Input - Improved touch target -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputConfirmPassword"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:hint="@string/confirm_password"
-                android:minHeight="60dp"
-                android:textColorHint="@color/text_hint"
-                app:boxStrokeColor="@color/button_text"
-                app:endIconMode="password_toggle"
-                app:endIconTint="@color/button_text"
-                app:hintTextColor="@color/button_text"
-                app:startIconDrawable="@drawable/ic_lock"
-                app:startIconTint="@color/button_text">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="@color/button_text" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edtConfirmPassword"
+                <!-- Password Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:inputType="textPassword"
-                    android:textColor="@color/button_text" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:hint="@string/password"
+                    android:textColorHint="@color/text_hint"
+                    app:boxStrokeColor="@color/button_text"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/button_text"
+                    app:hintTextColor="@color/button_text"
+                    app:startIconDrawable="@drawable/ic_lock"
+                    app:startIconTint="@color/button_text">
 
-            <!-- User Type Dropdown - Improved touch target -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputUserType"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:hint="@string/user_type"
-                android:minHeight="60dp"
-                android:textColorHint="@color/text_hint"
-                app:boxStrokeColor="@color/white"
-                app:endIconTint="@color/white"
-                app:hintTextColor="@color/button_text"
-                app:startIconDrawable="@drawable/ic_account_circle"
-                app:startIconTint="@color/button_text">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColor="@color/button_text" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <AutoCompleteTextView
-                    android:id="@+id/dropdownUserType"
+                <!-- Confirm Password Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputConfirmPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:inputType="none"
-                    android:textColor="@color/button_text" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="@string/confirm_password"
+                    android:textColorHint="@color/text_hint"
+                    app:boxStrokeColor="@color/button_text"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/button_text"
+                    app:hintTextColor="@color/button_text"
+                    app:startIconDrawable="@drawable/ic_lock"
+                    app:startIconTint="@color/button_text">
 
-            <!-- Sign Up Button - Improved touch target -->
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnSignUp"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="16dp"
-                android:minHeight="48dp"
-                android:minWidth="48dp"
-                android:text="@string/sign_up"
-                android:textAllCaps="false"
-                android:textColor="@color/button_text"
-                android:textSize="16sp"
-                app:backgroundTint="@color/button_color"
-                app:cornerRadius="8dp" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColor="@color/button_text" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Login Prompt - Improved touch target -->
+                <!-- User Type Dropdown -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputUserType"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="@string/user_type"
+                    android:textColorHint="@color/text_hint"
+                    app:boxStrokeColor="@color/button_text"
+                    app:hintTextColor="@color/button_text"
+                    app:startIconDrawable="@drawable/ic_account_circle"
+                    app:startIconTint="@color/button_text">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/dropdownUserType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textColor="@color/button_text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Dynamic Fields Container -->
+                <LinearLayout
+                    android:id="@+id/dynamicFieldsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- Fields will be added here programmatically -->
+                </LinearLayout>
+
+                <!-- Sign Up Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/sign_up"
+                    android:textAllCaps="false"
+                    android:textColor="@color/button_text"
+                    android:textSize="16sp"
+                    app:backgroundTint="@color/button_color"
+                    app:cornerRadius="32dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </ScrollView>
+
+    <!-- Login Prompt -->
     <LinearLayout
+        android:id="@+id/loginPrompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -224,7 +255,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/already_have_account"
+            android:text="Already have an account?"
             android:textColor="@color/white" />
 
         <TextView
@@ -233,13 +264,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:clickable="true"
-            android:contentDescription="@string/login_button_description"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:minHeight="48dp"
-            android:minWidth="48dp"
-            android:padding="12dp"
-            android:text="@string/login"
+            android:text="Login"
             android:textColor="@color/white"
             android:textStyle="bold" />
     </LinearLayout>
@@ -247,7 +272,6 @@
     <!-- Progress Bar -->
     <ProgressBar
         android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"

@@ -23,13 +23,11 @@ import com.google.firebase.firestore.FirebaseFirestoreSettings;
 import java.util.HashMap;
 import java.util.Map;
 
-
-
 public class LoginActivity extends AppCompatActivity {
 
     private TextInputEditText edtEmail, edtPassword;
     private Button btnLogin;
-    private TextView btnSignUp, btnForgotPassword;
+    private TextView btnSignUp, btnForgotPassword, tvLoggedInUser;
     private ProgressBar progressBar;
 
     private FirebaseAuth mAuth;
@@ -44,14 +42,13 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
-        // Setup Firestore offline persistence early
+        // Setup Firestore offline persistence
         try {
             FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder()
                     .setPersistenceEnabled(true)
                     .build();
             db.setFirestoreSettings(settings);
         } catch (Exception e) {
-            // Just log this error but don't show to user since it's not critical
             System.out.println("Error setting up Firestore persistence: " + e.getMessage());
         }
 
@@ -62,49 +59,35 @@ public class LoginActivity extends AppCompatActivity {
         btnSignUp = findViewById(R.id.btnSignUp);
         btnForgotPassword = findViewById(R.id.btnForgotPassword);
         progressBar = findViewById(R.id.progressBar);
+        tvLoggedInUser = findViewById(R.id.tvLoggedInUser);
 
         // Set click listeners
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loginUser();
-            }
+        btnLogin.setOnClickListener(v -> loginUser());
+
+        btnSignUp.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+            startActivity(intent);
         });
 
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
-                startActivity(intent);
+        btnForgotPassword.setOnClickListener(v -> {
+            String email = edtEmail.getText().toString().trim();
+            if (email.isEmpty()) {
+                Toast.makeText(LoginActivity.this, "Please enter your email first", Toast.LENGTH_SHORT).show();
+                return;
             }
-        });
 
-        btnForgotPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Handle forgot password
-                String email = edtEmail.getText().toString().trim();
-                if (email.isEmpty()) {
-                    Toast.makeText(LoginActivity.this, "Please enter your email first", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                progressBar.setVisibility(View.VISIBLE);
-                mAuth.sendPasswordResetEmail(email)
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                progressBar.setVisibility(View.GONE);
-                                if (task.isSuccessful()) {
-                                    Toast.makeText(LoginActivity.this, "Password reset email sent", Toast.LENGTH_SHORT).show();
-                                } else {
-                                    Toast.makeText(LoginActivity.this, "Failed to send reset email: " +
-                                                    (task.getException() != null ? task.getException().getMessage() : "Unknown error"),
-                                            Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
-            }
+            progressBar.setVisibility(View.VISIBLE);
+            mAuth.sendPasswordResetEmail(email)
+                    .addOnCompleteListener(task -> {
+                        progressBar.setVisibility(View.GONE);
+                        if (task.isSuccessful()) {
+                            Toast.makeText(LoginActivity.this, "Password reset email sent", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(LoginActivity.this, "Failed to send reset email: " +
+                                            (task.getException() != null ? task.getException().getMessage() : "Unknown error"),
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    });
         });
     }
 
@@ -125,27 +108,22 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        // Show progress bar
         progressBar.setVisibility(View.VISIBLE);
 
-        // Authenticate user
         mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            if (user != null) {
-                                // Check if user is admin or regular user
-                                checkUserType(user.getUid());
-                            }
-                        } else {
-                            // Hide progress bar
-                            progressBar.setVisibility(View.GONE);
-                            Toast.makeText(LoginActivity.this, "Authentication failed: " +
-                                            (task.getException() != null ? task.getException().getMessage() : "Unknown error"),
-                                    Toast.LENGTH_SHORT).show();
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        // Get current user
+                        FirebaseUser firebaseUser = mAuth.getCurrentUser();
+                        if (firebaseUser != null) {
+                            // Check user type and get additional user data
+                            checkUserType(firebaseUser.getUid());
                         }
+                    } else {
+                        progressBar.setVisibility(View.GONE);
+                        Toast.makeText(LoginActivity.this, "Authentication failed: " +
+                                        (task.getException() != null ? task.getException().getMessage() : "Unknown error"),
+                                Toast.LENGTH_SHORT).show();
                     }
                 });
     }
@@ -157,48 +135,66 @@ public class LoginActivity extends AppCompatActivity {
 
                     if (document != null && document.exists()) {
                         String userType = document.getString("userType");
+                        String username = document.getString("username");
+                        String email = document.getString("email");
+                        String fullName = document.getString("fullName");
 
-                        // Navigate based on user type
+                        // Create intent based on user type
+                        Intent intent;
                         if (userType != null && userType.equals("admin")) {
-                            startActivity(new Intent(LoginActivity.this, AdminDashboardActivity.class));
+                            intent = new Intent(LoginActivity.this, AdminDashboardActivity.class);
                         } else {
-                            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+                            intent = new Intent(LoginActivity.this, DashboardActivity.class);
                         }
+
+                        // Pass all user data to the next activity
+                        intent.putExtra("userId", userId);
+                        intent.putExtra("username", username != null ? username : "");
+                        intent.putExtra("email", email != null ? email : "");
+                        intent.putExtra("fullName", fullName != null ? fullName : "");
+                        intent.putExtra("userType", userType != null ? userType : "regular");
+
+                        startActivity(intent);
                         finish();
                     } else {
-                        // Create a default user profile if none exists
                         createDefaultUserProfile(userId);
                     }
                 })
                 .addOnFailureListener(e -> {
                     progressBar.setVisibility(View.GONE);
-
-                    // Log the error but don't display it to the user
                     System.out.println("Failed to check user type: " + e.getMessage());
-
-                    // Create a default user profile as fallback
                     createDefaultUserProfile(userId);
                 });
     }
 
-    // Method to create a default user profile
     private void createDefaultUserProfile(String userId) {
-        // Create a map with default user data
+        FirebaseUser firebaseUser = mAuth.getCurrentUser();
+        if (firebaseUser == null) return;
+
         Map<String, Object> userData = new HashMap<>();
         userData.put("userType", "regular");
+        userData.put("email", firebaseUser.getEmail());
         userData.put("createdAt", System.currentTimeMillis());
 
         db.collection("users").document(userId)
                 .set(userData)
                 .addOnSuccessListener(aVoid -> {
-                    Toast.makeText(LoginActivity.this, "Welcome to UnivMate!", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    // Pass minimum required data
+                    Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+                    intent.putExtra("userId", userId);
+                    intent.putExtra("email", firebaseUser.getEmail());
+                    intent.putExtra("userType", "regular");
+
+                    startActivity(intent);
                     finish();
                 })
                 .addOnFailureListener(e -> {
-                    // Try not to show technical errors to users
-                    Toast.makeText(LoginActivity.this, "Welcome to UnivMate!", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    // Even if profile creation fails, proceed with basic data
+                    Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+                    intent.putExtra("userId", userId);
+                    intent.putExtra("email", firebaseUser.getEmail());
+
+                    startActivity(intent);
                     finish();
                 });
     }

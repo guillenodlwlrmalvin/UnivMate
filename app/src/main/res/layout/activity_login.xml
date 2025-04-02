@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,18 +8,33 @@
     android:background="@color/primary"
     tools:context=".LoginActivity">
 
+    <!-- Display Username (Initially hidden, shown after login) -->
+    <TextView
+        android:id="@+id/tvLoggedInUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- App Logo -->
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="64dp"
         android:contentDescription="@string/app_logo_description"
-        android:src="@drawable/app_logo"
+        android:src="@drawable/applogo2"
         app:shapeAppearanceOverlay="@style/CircleImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLoggedInUser" />
 
+    <!-- App Name -->
     <TextView
         android:id="@+id/tvAppName"
         android:layout_width="wrap_content"
@@ -32,6 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+    <!-- Login Card -->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/loginCard"
         android:layout_width="match_parent"
@@ -52,16 +69,19 @@
             android:orientation="vertical"
             android:padding="16dp">
 
+            <!-- Email Input (Replaced Username) -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputEmail"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:hint="@string/email"
+                android:hint="Email"
                 android:textColorHint="@color/text_hint"
                 app:boxStrokeColor="@color/button_text"
-                app:hintTextColor="@color/button_text">
+                app:hintTextColor="@color/button_text"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="@color/button_text">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtEmail"
@@ -71,6 +91,7 @@
                     android:textColor="@color/button_text" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <!-- Password Input (No changes) -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputPassword"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -82,7 +103,9 @@
                 app:boxStrokeColor="@color/button_text"
                 app:endIconMode="password_toggle"
                 app:endIconTint="@color/input_text"
-                app:hintTextColor="@color/button_text">
+                app:hintTextColor="@color/button_text"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@color/button_text">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtPassword"
@@ -92,7 +115,8 @@
                     android:textColor="@color/button_text" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
+            <!-- Login Button -->
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -104,6 +128,7 @@
                 android:textColor="@color/button_text"
                 android:textSize="16sp" />
 
+            <!-- Forgot Password Link -->
             <TextView
                 android:id="@+id/btnForgotPassword"
                 android:layout_width="wrap_content"
@@ -117,6 +142,7 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
+    <!-- Sign Up Prompt -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -144,6 +170,7 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+    <!-- Progress Bar -->
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"

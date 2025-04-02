@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- res/values/arrays.xml -->
+    <string-array name="user_types">
+        <item>Student</item>
+        <item>Faculty</item>
+        <item>Staff</item>
+    </string-array>
+
+    <string-array name="tcu_colleges">
+        <item>Arts and Sciences</item>
+        <item>Business Management</item>
+        <item>Criminal Justice</item>
+        <item>Education</item>
+        <item>Engineering and Technology</item>
+        <item>Hospitality and Tourism Management</item>
+        <item>Information and Communication Technology</item>
+    </string-array>
+
+    <string-array name="faculty_roles">
+        <item>Professor</item>
+        <item>Evaluator</item>
+        <item>Registrar</item>
+        <item>Department Head</item>
+        <item>Administrator</item>
+    </string-array>
+
+    <string-array name="year_levels">
+        <item>1st Year</item>
+        <item>2nd Year</item>
+        <item>3rd Year</item>
+        <item>4th Year</item>
+    </string-array>
+
+    <!-- res/values/arrays.xml -->
+    <string-array name="courses_array">
+        <item>Bachelor of Science in Computer Science</item>
+        <item>Bachelor of Science in Information Technology</item>
+        <item>Bachelor of Science in Business Administration</item>
+        <item>Bachelor of Science in Accountancy</item>
+        <item>Bachelor of Science in Hospitality Management</item>
+        <item>Bachelor of Science in Tourism Management</item>
+        <item>Bachelor of Science in Criminal Justice</item>
+        <item>Bachelor of Elementary Education</item>
+        <item>Bachelor of Secondary Education</item>
+    </string-array>
+</resources>

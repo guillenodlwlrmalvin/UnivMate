@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Pure white (unchanged) -->
+
     <color name="white">#FFFFFF</color>
 
     <!-- Updated purple to more academic tone -->
@@ -26,4 +26,17 @@
     <color name="success_green">#28A745</color>
     <color name="warning_yellow">#FFC107</color>
     <color name="error_red">#DC3545</color>
+
+
+    <color name="black">#000000</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+
+    <color name="lightBackground">#FFF5F5F5</color>
+    <color name="cardBackground">#FFFFFFFF</color>
+    <color name="textPrimary">#FF333333</color>
+    <color name="hint_color">#80000000</color>
+
+    <color name="white_alpha_70">#B3FFFFFF</color>
+    <color name="white_alpha_20">#33FFFFFF</color>
 </resources>
