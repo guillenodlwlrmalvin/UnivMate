@@ -4,14 +4,15 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <!-- For Android 10 and below -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- For Android 10 and below -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="29" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="29" />
-    <!-- For Android 11 and above -->
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" /> <!-- For Android 11 and above -->
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
 
     <application
@@ -24,7 +25,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UnivMate"
         tools:targetApi="31">
-
+        <activity
+            android:name=".NewRequestActivity"
+            android:exported="false" />
         <!-- Main entry point -->
         <activity
             android:name=".LoginActivity"
@@ -32,19 +35,17 @@
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Main Activity (should be after login) -->
+        </activity> <!-- Main Activity (should be after login) -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop">
-            <!-- Add intent filters if you want deep linking -->
-        </activity>
 
-        <!-- Other Activities -->
+            <!-- Add intent filters if you want deep linking -->
+        </activity> <!-- Other Activities -->
         <activity
             android:name=".DashboardActivity"
             android:exported="false" />
@@ -69,18 +70,14 @@
             android:exported="false" />
         <activity
             android:name=".ProfileActivity"
-            android:exported="false" />
-
-        <!-- Services -->
+            android:exported="false" /> <!-- Services -->
         <service
             android:name=".MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
-        </service>
-
-        <!-- Meta-data -->
+        </service> <!-- Meta-data -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -88,4 +85,5 @@
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />
     </application>
+
 </manifest>

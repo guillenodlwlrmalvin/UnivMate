@@ -42,13 +42,14 @@
     <string name="category">Category</string>
     <string name="select_category">Select a category</string>
     <string name="category_icon_desc">Category selection icon</string>
-    <string name="category_dropdown_desc">Select maintenance category from dropdown</string>
+    <string name="category_dropdown_desc">Selection of Category</string>
     <string name="submit_request">Submit Request</string>
     <string name="submit_request_desc">Submit new maintenance request</string>
     <string name="my_requests">My Requests</string>
     <string name="no_request_found">No Request Found</string>
     <string name="error_loading_requests">Error Loading Requests</string>
     <string name="notifications">Notifications</string>
+    <string name="new_request_title">New Maintenance Request</string>
 
     <!--Nav Header -->
     <string name="profile">Profile</string>
@@ -87,6 +88,37 @@
     <string name="request_submitted">Request submitted successfully</string>
     <string name="request_submit_failed">Failed to submit request</string>
 
+
     <string name="profile_image_desc">Profile picture</string>
+    <string name="take_photo_desc">Button to take a new photo</string>
+    <string name="choose_photo_desc">Button to choose photo from gallery</string>
+
+
+    <string name="greeting_with_name">Hello %s!\nWhat needs maintenance today?</string>
+    <string name="greeting_default">Hello there!\nWhat needs maintenance today?</string>
+
+    <!-- Urgency Levels -->
+    <string name="urgency_level">Urgency Level</string>
+    <string name="low">Low</string>
+    <string name="low_urgency_desc">Low urgency option</string>
+    <string name="medium">Medium</string>
+    <string name="medium_urgency_desc">Medium urgency option (default selected)</string>
+    <string name="high">High</string>
+    <string name="high_urgency_desc">High urgency option</string>
+
+    <!-- Location -->
+    <string name="location_hint">Location</string>
+    <string name="location_input_desc">Enter location details</string>
+
+    <!-- Description -->
+    <string name="category_hint">Category</string>
+    <string name="description_hint">Description</string>
+    <string name="description_input_desc">Enter problem description</string>
+
+    <!-- Photo Attachment -->
+    <string name="attach_photos">Attach Photos</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+
 
 </resources>

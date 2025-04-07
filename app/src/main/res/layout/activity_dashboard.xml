@@ -9,7 +9,7 @@
     android:fitsSystemWindows="true"
     android:background="@color/lightBackground">
 
-    <!-- Navigation Drawer on the left -->
+    <!-- Navigation Drawer -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
         android:layout_width="wrap_content"
@@ -19,250 +19,146 @@
         app:menu="@menu/nav_menu"
         app:itemTextColor="@color/textPrimary"
         app:itemIconTint="@color/primary"
-        android:background="@color/cardBackground"
-        app:elevation="16dp"/>
+        android:background="@color/cardBackground"/>
 
     <!-- Main Content -->
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swipeRefreshLayout"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ScrollView
+        <!-- MaterialToolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:title="Dashboard"
+            app:navigationIcon="@drawable/ic_menu"
+            app:titleTextColor="@android:color/white"/>
+
+        <!-- SwipeRefreshLayout Wrapper -->
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <RelativeLayout
+            <!-- Content Container -->
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:fillViewport="true">
 
-                <!-- Progress Bar -->
-                <ProgressBar
-                    android:id="@+id/progressBar"
-                    style="?android:attr/progressBarStyleLarge"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:visibility="gone"/>
-
-                <!-- Empty State View -->
                 <LinearLayout
-                    android:id="@+id/emptyStateView"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:visibility="gone">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/empty_state"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/no_request_found"
-                        android:textSize="18sp"
-                        android:textColor="@color/textPrimary"
-                        android:layout_marginTop="16dp"/>
-                </LinearLayout>
-
-                <!-- Error State View -->
-                <LinearLayout
-                    android:id="@+id/errorStateView"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:visibility="gone">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/ic_error"/>
-
-                    <TextView
-                        android:id="@+id/tvError"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/error_loading_requests"
-                        android:textSize="18sp"
-                        android:textColor="@color/textPrimary"
-                        android:layout_marginTop="16dp"/>
-
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnRetry"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/retry"
-                        android:layout_marginTop="16dp"
-                        app:backgroundTint="@color/button_color"
-                        app:cornerRadius="8dp"/>
-                </LinearLayout>
-
-                <!-- Main Content -->
-                <LinearLayout
-                    android:id="@+id/mainContent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingBottom="24dp">
+                    android:orientation="vertical">
 
-                    <com.google.android.material.appbar.MaterialToolbar
-                        android:id="@+id/topAppBar"
-                        android:layout_width="match_parent"
-                        android:layout_height="?attr/actionBarSize"
-                        android:background="@color/primary"
-                        app:title="@string/app_name"
-                        android:textStyle="bold"
-                        app:titleTextColor="@android:color/white"
-                        app:navigationIcon="@drawable/ic_menu" />
-
-                    <!-- Request form section -->
+                    <!-- Greeting Card -->
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
-                        app:cardBackgroundColor="@color/cardBackground"
                         app:cardCornerRadius="8dp"
-                        app:cardElevation="2dp">
+                        app:cardElevation="2dp"
+                        android:layout_marginBottom="16dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="16dp">
+                            android:padding="24dp">
 
                             <TextView
+                                android:id="@+id/greetingText"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/new_request"
-                                android:textColor="@color/primary"
-                                android:textSize="18sp"
+                                android:text="Hello there!\nWhat needs maintenance today?"
+                                android:textSize="20sp"
+                                android:textColor="@color/textPrimary"
                                 android:textStyle="bold"
-                                android:layout_marginBottom="16dp"/>
-
-                            <com.google.android.material.textfield.TextInputLayout
-                                android:id="@+id/textInputCategory"
-                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="16dp"
-                                android:hint="@string/category"
-                                android:minHeight="60dp"
-                                android:textColorHint="@color/text_hint"
-                                app:boxStrokeColor="@color/input_text"
-                                app:endIconTint="@color/input_text"
-                                app:hintTextColor="@color/input_text"
-                                app:startIconDrawable="@drawable/ic_category"
-                                app:startIconTint="@color/input_text"
-                                app:startIconContentDescription="@string/category_icon_desc">
-
-                                <AutoCompleteTextView
-                                    android:id="@+id/dropdownCategory"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="60dp"
-                                    android:inputType="none"
-                                    android:focusable="false"
-                                    android:focusableInTouchMode="false"
-                                    android:clickable="true"
-                                    android:cursorVisible="false"
-                                    android:textColor="@color/input_text"
-                                    android:importantForAccessibility="no"
-                                    android:hint="@string/select_category"
-                                    android:dropDownHeight="wrap_content"
-                                    android:dropDownVerticalOffset="4dp"
-                                    android:dropDownWidth="match_parent"/>
-                            </com.google.android.material.textfield.TextInputLayout>
+                                android:lineSpacingExtra="4dp"/>
 
                             <com.google.android.material.button.MaterialButton
-                                android:id="@+id/btnSubmitRequest"
+                                android:id="@+id/btnNewRequest"
                                 android:layout_width="match_parent"
-                                android:layout_height="60dp"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/submit_request"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="24dp"
+                                android:text="Submit New Request"
                                 android:textAllCaps="false"
-                                android:textColor="@color/button_text"
                                 android:textSize="16sp"
-                                android:contentDescription="@string/submit_request_desc"
-                                app:backgroundTint="@color/button_color"
-                                app:cornerRadius="8dp"/>
+                                app:icon="@drawable/ic_add_circle"
+                                app:iconGravity="start"
+                                app:iconTint="@android:color/white"
+                                app:cornerRadius="8dp"
+                                app:backgroundTint="@color/primary"/>
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
 
-                    <!-- Request dashboard section -->
-                    <com.google.android.material.card.MaterialCardView
+                    <!-- Requests Status Header -->
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="16dp"
-                        android:layout_marginBottom="16dp"
-                        app:cardBackgroundColor="@color/cardBackground"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="2dp">
+                        android:text="Your Requests"
+                        android:textSize="18sp"
+                        android:textColor="@color/textPrimary"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/my_requests"
-                                android:textColor="@color/primary"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
-                                android:padding="16dp"
-                                android:paddingBottom="8dp"/>
-
-                            <androidx.recyclerview.widget.RecyclerView
-                                android:id="@+id/recyclerViewRequests"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:minHeight="200dp"
-                                android:padding="8dp"
-                                tools:listitem="@layout/item_request"/>
-                        </LinearLayout>
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <!-- Notification section -->
-                    <com.google.android.material.card.MaterialCardView
+                    <!-- Requests RecyclerView -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/requestsRecyclerView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="16dp"
-                        app:cardBackgroundColor="@color/cardBackground"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="2dp">
+                        android:clipToPadding="false"
+                        android:paddingBottom="80dp"
+                        tools:listitem="@layout/item_request"/>
 
-                        <LinearLayout
+                    <!-- Loading Indicator -->
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"/>
+
+                    <!-- Empty State -->
+                    <LinearLayout
+                        android:id="@+id/emptyStateView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:padding="32dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/ic_empty_status"
+                            app:tint="@color/primary"/>
+
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:text="No requests yet"
+                            android:textAlignment="center"
+                            android:textColor="@color/button_color"
+                            android:textSize="16sp"
+                            android:layout_marginTop="16dp"/>
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/notifications"
-                                android:textColor="@color/primary"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
-                                android:padding="16dp"
-                                android:paddingBottom="8dp"/>
-
-                            <androidx.recyclerview.widget.RecyclerView
-                                android:id="@+id/recyclerViewNotifications"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:minHeight="150dp"
-                                android:padding="8dp"
-                                tools:listitem="@layout/item_notification"/>
-                        </LinearLayout>
-                    </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnStartRequest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Submit First Request"
+                            android:layout_marginTop="24dp"
+                            app:cornerRadius="8dp"/>
+                    </LinearLayout>
                 </LinearLayout>
-            </RelativeLayout>
-        </ScrollView>
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
+            </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
 </androidx.drawerlayout.widget.DrawerLayout>
