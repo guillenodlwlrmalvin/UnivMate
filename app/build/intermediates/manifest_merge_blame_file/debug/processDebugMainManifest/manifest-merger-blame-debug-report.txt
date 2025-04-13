@@ -1,0 +1,675 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.univmate"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- For Android 10 and below -->
+13-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:7:5-76
+13-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:7:22-73
+14    <uses-permission
+14-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:8:5-10:38
+15        android:name="android.permission.READ_EXTERNAL_STORAGE"
+15-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:9:9-64
+16        android:maxSdkVersion="29" />
+16-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:10:9-35
+17    <uses-permission
+17-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:11:5-13:38
+18        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+18-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:12:9-65
+19        android:maxSdkVersion="29" /> <!-- For Android 11 and above -->
+19-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:13:9-35
+20    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+20-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:14:5-16:40
+20-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:15:9-66
+21
+22    <queries>
+22-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:10:5-16:15
+23        <intent>
+23-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:11:9-15:18
+24            <action android:name="android.intent.action.VIEW" />
+24-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:12:13-65
+24-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:12:21-62
+25
+26            <data android:scheme="https" />
+26-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:14:13-44
+26-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:14:19-41
+27        </intent>
+28    </queries>
+29
+30    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+30-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:23:5-77
+30-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:23:22-74
+31    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+31-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:24:5-68
+31-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:24:22-65
+32    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+32-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:26:5-82
+32-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:26:22-79
+33
+34    <permission
+34-->[androidx.core:core:1.15.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\29bff08214fed804a22e1e4a922a7615\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+35        android:name="com.example.univmate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+35-->[androidx.core:core:1.15.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\29bff08214fed804a22e1e4a922a7615\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+36        android:protectionLevel="signature" />
+36-->[androidx.core:core:1.15.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\29bff08214fed804a22e1e4a922a7615\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+37
+38    <uses-permission android:name="com.example.univmate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+38-->[androidx.core:core:1.15.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\29bff08214fed804a22e1e4a922a7615\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+38-->[androidx.core:core:1.15.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\29bff08214fed804a22e1e4a922a7615\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+39    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+39-->[com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\9c5ec8e2291050081bb291cf88f3b0c8\transformed\recaptcha-18.6.1\AndroidManifest.xml:9:5-98
+39-->[com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\9c5ec8e2291050081bb291cf88f3b0c8\transformed\recaptcha-18.6.1\AndroidManifest.xml:9:22-95
+40
+41    <application
+41-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:18:5-87:19
+42        android:allowBackup="true"
+42-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:19:9-35
+43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+43-->[androidx.core:core:1.15.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\29bff08214fed804a22e1e4a922a7615\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+44        android:dataExtractionRules="@xml/data_extraction_rules"
+44-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:20:9-65
+45        android:debuggable="true"
+46        android:extractNativeLibs="false"
+47        android:fullBackupContent="@xml/backup_rules"
+47-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:21:9-54
+48        android:icon="@mipmap/ic_launcher"
+48-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:22:9-43
+49        android:label="@string/app_name"
+49-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:23:9-41
+50        android:roundIcon="@mipmap/ic_launcher_round"
+50-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:24:9-54
+51        android:supportsRtl="true"
+51-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:25:9-35
+52        android:testOnly="true"
+53        android:theme="@style/Theme.UnivMate" >
+53-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:26:9-46
+54        <activity
+54-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:28:9-30:40
+55            android:name="com.example.univmate.NewRequestActivity"
+55-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:29:13-47
+56            android:exported="false" />
+56-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:30:13-37
+57        <!-- Main entry point -->
+58        <activity
+58-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:32:9-41:20
+59            android:name="com.example.univmate.LoginActivity"
+59-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:33:13-42
+60            android:exported="true"
+60-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:34:13-36
+61            android:windowSoftInputMode="adjustResize" >
+61-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:35:13-55
+62            <intent-filter>
+62-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:36:13-40:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:37:17-69
+63-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:37:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:39:17-77
+65-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:39:27-74
+66            </intent-filter>
+67        </activity> <!-- Main Activity (should be after login) -->
+68        <activity
+68-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:42:9-48:20
+69            android:name="com.example.univmate.MainActivity"
+69-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:43:13-41
+70            android:exported="true"
+70-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:44:13-36
+71            android:launchMode="singleTop" >
+71-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:45:13-43
+72
+73            <!-- Add intent filters if you want deep linking -->
+74        </activity> <!-- Other Activities -->
+75        <activity
+75-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:49:9-51:40
+76            android:name="com.example.univmate.DashboardActivity"
+76-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:50:13-46
+77            android:exported="false" />
+77-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:51:13-37
+78        <activity
+78-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:52:9-54:40
+79            android:name="com.example.univmate.AdminDashboardActivity"
+79-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:53:13-51
+80            android:exported="false" />
+80-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:54:13-37
+81        <activity
+81-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:55:9-58:58
+82            android:name="com.example.univmate.SignupActivity"
+82-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:56:13-43
+83            android:exported="false"
+83-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:57:13-37
+84            android:windowSoftInputMode="adjustResize" />
+84-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:58:13-55
+85        <activity
+85-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:59:9-61:40
+86            android:name="com.example.univmate.NotificationActivity"
+86-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:60:13-49
+87            android:exported="false" />
+87-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:61:13-37
+88        <activity
+88-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:62:9-64:40
+89            android:name="com.example.univmate.NotificationDetailActivity"
+89-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:63:13-55
+90            android:exported="false" />
+90-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:64:13-37
+91        <activity
+91-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:65:9-67:40
+92            android:name="com.example.univmate.RequestDetailActivity"
+92-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:66:13-50
+93            android:exported="false" />
+93-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:67:13-37
+94        <activity
+94-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:68:9-70:40
+95            android:name="com.example.univmate.SettingsActivity"
+95-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:69:13-45
+96            android:exported="false" />
+96-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:70:13-37
+97        <activity
+97-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:71:9-73:40
+98            android:name="com.example.univmate.ProfileActivity"
+98-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:72:13-44
+99            android:exported="false" /> <!-- Services -->
+99-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:73:13-37
+100        <service
+100-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:74:9-80:19
+101            android:name="com.example.univmate.MyFirebaseMessagingService"
+101-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:75:13-55
+102            android:exported="false" >
+102-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:76:13-37
+103            <intent-filter>
+103-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:77:13-79:29
+104                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+104-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:78:17-78
+104-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:78:25-75
+105            </intent-filter>
+106        </service> <!-- Meta-data -->
+107        <meta-data
+107-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:81:9-83:69
+108            android:name="com.google.android.gms.version"
+108-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:82:13-58
+109            android:value="@integer/google_play_services_version" />
+109-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:83:13-66
+110        <meta-data
+110-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:84:9-86:71
+111            android:name="com.google.firebase.messaging.default_notification_channel_id"
+111-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:85:13-89
+112            android:value="@string/default_notification_channel_id" />
+112-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:86:13-68
+113
+114        <service
+114-->[com.google.firebase:firebase-inappmessaging-display-ktx:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\7abc5baeab42fb0f036f5a6cea6c573c\transformed\firebase-inappmessaging-display-ktx-21.0.2\AndroidManifest.xml:9:9-15:19
+115            android:name="com.google.firebase.components.ComponentDiscoveryService"
+115-->[com.google.firebase:firebase-inappmessaging-display-ktx:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\7abc5baeab42fb0f036f5a6cea6c573c\transformed\firebase-inappmessaging-display-ktx-21.0.2\AndroidManifest.xml:10:13-84
+116            android:directBootAware="true"
+116-->[com.google.firebase:firebase-common:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\dc448d4e70bc8fc7a57a10001c61e76c\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+117            android:exported="false" >
+117-->[com.google.firebase:firebase-inappmessaging-display-ktx:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\7abc5baeab42fb0f036f5a6cea6c573c\transformed\firebase-inappmessaging-display-ktx-21.0.2\AndroidManifest.xml:11:13-37
+118            <meta-data
+118-->[com.google.firebase:firebase-inappmessaging-display-ktx:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\7abc5baeab42fb0f036f5a6cea6c573c\transformed\firebase-inappmessaging-display-ktx-21.0.2\AndroidManifest.xml:12:13-14:85
+119                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.ktx.FirebaseInappmessagingDisplayLegacyRegistrar"
+119-->[com.google.firebase:firebase-inappmessaging-display-ktx:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\7abc5baeab42fb0f036f5a6cea6c573c\transformed\firebase-inappmessaging-display-ktx-21.0.2\AndroidManifest.xml:13:17-154
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-inappmessaging-display-ktx:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\7abc5baeab42fb0f036f5a6cea6c573c\transformed\firebase-inappmessaging-display-ktx-21.0.2\AndroidManifest.xml:14:17-82
+121            <meta-data
+121-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:22:13-24:85
+122                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayKtxRegistrar"
+122-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:23:17-147
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:24:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:25:13-27:85
+125                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
+125-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:26:17-144
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:27:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-auth-ktx:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\63fdb38877cec19e058f2f5ad28e1981\transformed\firebase-auth-ktx-23.2.0\AndroidManifest.xml:11:13-13:85
+128                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
+128-->[com.google.firebase:firebase-auth-ktx:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\63fdb38877cec19e058f2f5ad28e1981\transformed\firebase-auth-ktx-23.2.0\AndroidManifest.xml:12:17-119
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-auth-ktx:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\63fdb38877cec19e058f2f5ad28e1981\transformed\firebase-auth-ktx-23.2.0\AndroidManifest.xml:13:17-82
+130            <meta-data
+130-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:69:13-71:85
+131                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+131-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:70:17-109
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:71:17-82
+133            <meta-data
+133-->[com.google.firebase:firebase-database-ktx:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f6c85669f8ef0c9fd196ec7e4fb01404\transformed\firebase-database-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+134                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseLegacyRegistrar"
+134-->[com.google.firebase:firebase-database-ktx:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f6c85669f8ef0c9fd196ec7e4fb01404\transformed\firebase-database-ktx-21.0.0\AndroidManifest.xml:13:17-127
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-database-ktx:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f6c85669f8ef0c9fd196ec7e4fb01404\transformed\firebase-database-ktx-21.0.0\AndroidManifest.xml:14:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-database:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\a30e7de35f1d012e7bf0e8117dd11f63\transformed\firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
+137                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+137-->[com.google.firebase:firebase-database:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\a30e7de35f1d012e7bf0e8117dd11f63\transformed\firebase-database-21.0.0\AndroidManifest.xml:30:17-120
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-database:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\a30e7de35f1d012e7bf0e8117dd11f63\transformed\firebase-database-21.0.0\AndroidManifest.xml:31:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-database:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\a30e7de35f1d012e7bf0e8117dd11f63\transformed\firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
+140                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+140-->[com.google.firebase:firebase-database:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\a30e7de35f1d012e7bf0e8117dd11f63\transformed\firebase-database-21.0.0\AndroidManifest.xml:33:17-109
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-database:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\a30e7de35f1d012e7bf0e8117dd11f63\transformed\firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+142            <meta-data
+142-->[com.google.firebase:firebase-firestore-ktx:25.1.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\195bd5976d75871d4f9b7b652df775d5\transformed\firebase-firestore-ktx-25.1.3\AndroidManifest.xml:12:13-14:85
+143                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
+143-->[com.google.firebase:firebase-firestore-ktx:25.1.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\195bd5976d75871d4f9b7b652df775d5\transformed\firebase-firestore-ktx-25.1.3\AndroidManifest.xml:13:17-129
+144                android:value="com.google.firebase.components.ComponentRegistrar" />
+144-->[com.google.firebase:firebase-firestore-ktx:25.1.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\195bd5976d75871d4f9b7b652df775d5\transformed\firebase-firestore-ktx-25.1.3\AndroidManifest.xml:14:17-82
+145            <meta-data
+145-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\b683f742f75948010a49ad5bf73e8d68\transformed\firebase-firestore-25.1.3\AndroidManifest.xml:17:13-19:85
+146                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+146-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\b683f742f75948010a49ad5bf73e8d68\transformed\firebase-firestore-25.1.3\AndroidManifest.xml:18:17-122
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\b683f742f75948010a49ad5bf73e8d68\transformed\firebase-firestore-25.1.3\AndroidManifest.xml:19:17-82
+148            <meta-data
+148-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\b683f742f75948010a49ad5bf73e8d68\transformed\firebase-firestore-25.1.3\AndroidManifest.xml:20:13-22:85
+149                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+149-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\b683f742f75948010a49ad5bf73e8d68\transformed\firebase-firestore-25.1.3\AndroidManifest.xml:21:17-111
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\b683f742f75948010a49ad5bf73e8d68\transformed\firebase-firestore-25.1.3\AndroidManifest.xml:22:17-82
+151            <meta-data
+151-->[com.google.firebase:firebase-messaging-ktx:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\68397a76d300809c6d90b5de54a6900b\transformed\firebase-messaging-ktx-24.1.1\AndroidManifest.xml:26:13-28:85
+152                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar"
+152-->[com.google.firebase:firebase-messaging-ktx:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\68397a76d300809c6d90b5de54a6900b\transformed\firebase-messaging-ktx-24.1.1\AndroidManifest.xml:27:17-129
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.firebase:firebase-messaging-ktx:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\68397a76d300809c6d90b5de54a6900b\transformed\firebase-messaging-ktx-24.1.1\AndroidManifest.xml:28:17-82
+154            <meta-data
+154-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:57:13-59:85
+155                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+155-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:58:17-122
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:59:17-82
+157            <meta-data
+157-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:60:13-62:85
+158                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+158-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:61:17-119
+159                android:value="com.google.firebase.components.ComponentRegistrar" />
+159-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:62:17-82
+160            <meta-data
+160-->[com.google.firebase:firebase-storage-ktx:21.0.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f71553e1d333459c9eb4315a48fe8c7e\transformed\firebase-storage-ktx-21.0.1\AndroidManifest.xml:12:13-14:85
+161                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageLegacyRegistrar"
+161-->[com.google.firebase:firebase-storage-ktx:21.0.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f71553e1d333459c9eb4315a48fe8c7e\transformed\firebase-storage-ktx-21.0.1\AndroidManifest.xml:13:17-125
+162                android:value="com.google.firebase.components.ComponentRegistrar" />
+162-->[com.google.firebase:firebase-storage-ktx:21.0.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f71553e1d333459c9eb4315a48fe8c7e\transformed\firebase-storage-ktx-21.0.1\AndroidManifest.xml:14:17-82
+163            <meta-data
+163-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\639cc90da2d760ea33a101b4b9098f75\transformed\firebase-storage-21.0.1\AndroidManifest.xml:30:13-32:85
+164                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+164-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\639cc90da2d760ea33a101b4b9098f75\transformed\firebase-storage-21.0.1\AndroidManifest.xml:31:17-118
+165                android:value="com.google.firebase.components.ComponentRegistrar" />
+165-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\639cc90da2d760ea33a101b4b9098f75\transformed\firebase-storage-21.0.1\AndroidManifest.xml:32:17-82
+166            <meta-data
+166-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\639cc90da2d760ea33a101b4b9098f75\transformed\firebase-storage-21.0.1\AndroidManifest.xml:33:13-35:85
+167                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+167-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\639cc90da2d760ea33a101b4b9098f75\transformed\firebase-storage-21.0.1\AndroidManifest.xml:34:17-107
+168                android:value="com.google.firebase.components.ComponentRegistrar" />
+168-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\639cc90da2d760ea33a101b4b9098f75\transformed\firebase-storage-21.0.1\AndroidManifest.xml:35:17-82
+169            <meta-data
+169-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\c95b2dc2fba38f5b93101789a97f230e\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:25:13-27:85
+170                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+170-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\c95b2dc2fba38f5b93101789a97f230e\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:26:17-120
+171                android:value="com.google.firebase.components.ComponentRegistrar" />
+171-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\c95b2dc2fba38f5b93101789a97f230e\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:27:17-82
+172            <meta-data
+172-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\c95b2dc2fba38f5b93101789a97f230e\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:28:13-30:85
+173                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+173-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\c95b2dc2fba38f5b93101789a97f230e\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:29:17-117
+174                android:value="com.google.firebase.components.ComponentRegistrar" />
+174-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\c95b2dc2fba38f5b93101789a97f230e\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:30:17-82
+175            <meta-data
+175-->[com.google.firebase:firebase-inappmessaging:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\7df0527431e8a3c0376cabb35d02cc1e\transformed\firebase-inappmessaging-21.0.2\AndroidManifest.xml:14:13-16:85
+176                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingKtxRegistrar"
+176-->[com.google.firebase:firebase-inappmessaging:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\7df0527431e8a3c0376cabb35d02cc1e\transformed\firebase-inappmessaging-21.0.2\AndroidManifest.xml:15:17-132
+177                android:value="com.google.firebase.components.ComponentRegistrar" />
+177-->[com.google.firebase:firebase-inappmessaging:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\7df0527431e8a3c0376cabb35d02cc1e\transformed\firebase-inappmessaging-21.0.2\AndroidManifest.xml:16:17-82
+178            <meta-data
+178-->[com.google.firebase:firebase-inappmessaging:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\7df0527431e8a3c0376cabb35d02cc1e\transformed\firebase-inappmessaging-21.0.2\AndroidManifest.xml:17:13-19:85
+179                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
+179-->[com.google.firebase:firebase-inappmessaging:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\7df0527431e8a3c0376cabb35d02cc1e\transformed\firebase-inappmessaging-21.0.2\AndroidManifest.xml:18:17-129
+180                android:value="com.google.firebase.components.ComponentRegistrar" />
+180-->[com.google.firebase:firebase-inappmessaging:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\7df0527431e8a3c0376cabb35d02cc1e\transformed\firebase-inappmessaging-21.0.2\AndroidManifest.xml:19:17-82
+181            <meta-data
+181-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4b5af25246b03796a9b7bcc8835e4905\transformed\firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+182                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+182-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4b5af25246b03796a9b7bcc8835e4905\transformed\firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+183                android:value="com.google.firebase.components.ComponentRegistrar" />
+183-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4b5af25246b03796a9b7bcc8835e4905\transformed\firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+184            <meta-data
+184-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4b5af25246b03796a9b7bcc8835e4905\transformed\firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+185                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+185-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4b5af25246b03796a9b7bcc8835e4905\transformed\firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+186                android:value="com.google.firebase.components.ComponentRegistrar" />
+186-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4b5af25246b03796a9b7bcc8835e4905\transformed\firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+187            <meta-data
+187-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\743cafef8d73b5e2ead853b328506e9e\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+188                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+188-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\743cafef8d73b5e2ead853b328506e9e\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+189                android:value="com.google.firebase.components.ComponentRegistrar" />
+189-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\743cafef8d73b5e2ead853b328506e9e\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+190            <meta-data
+190-->[com.google.firebase:firebase-common:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\dc448d4e70bc8fc7a57a10001c61e76c\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+191                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+191-->[com.google.firebase:firebase-common:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\dc448d4e70bc8fc7a57a10001c61e76c\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+192                android:value="com.google.firebase.components.ComponentRegistrar" />
+192-->[com.google.firebase:firebase-common:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\dc448d4e70bc8fc7a57a10001c61e76c\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+193            <meta-data
+193-->[com.google.firebase:firebase-abt:21.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\a6eb00a6e641bc57182a9201745b1724\transformed\firebase-abt-21.1.1\AndroidManifest.xml:12:13-14:85
+194                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+194-->[com.google.firebase:firebase-abt:21.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\a6eb00a6e641bc57182a9201745b1724\transformed\firebase-abt-21.1.1\AndroidManifest.xml:13:17-109
+195                android:value="com.google.firebase.components.ComponentRegistrar" />
+195-->[com.google.firebase:firebase-abt:21.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\a6eb00a6e641bc57182a9201745b1724\transformed\firebase-abt-21.1.1\AndroidManifest.xml:14:17-82
+196            <meta-data
+196-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5b263e771271102f6defc55534b09694\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+197                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+197-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5b263e771271102f6defc55534b09694\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+198                android:value="com.google.firebase.components.ComponentRegistrar" />
+198-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5b263e771271102f6defc55534b09694\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+199        </service>
+200
+201        <activity
+201-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:29:9-46:20
+202            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+202-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:30:13-80
+203            android:excludeFromRecents="true"
+203-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:31:13-46
+204            android:exported="true"
+204-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:32:13-36
+205            android:launchMode="singleTask"
+205-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:33:13-44
+206            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+206-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:34:13-72
+207            <intent-filter>
+207-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:35:13-45:29
+208                <action android:name="android.intent.action.VIEW" />
+208-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:12:13-65
+208-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:12:21-62
+209
+210                <category android:name="android.intent.category.DEFAULT" />
+210-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:38:17-76
+210-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:38:27-73
+211                <category android:name="android.intent.category.BROWSABLE" />
+211-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:39:17-78
+211-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:39:27-75
+212
+213                <data
+213-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:14:13-44
+214                    android:host="firebase.auth"
+215                    android:path="/"
+216                    android:scheme="genericidp" />
+216-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:14:19-41
+217            </intent-filter>
+218        </activity>
+219        <activity
+219-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:47:9-64:20
+220            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+220-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:48:13-79
+221            android:excludeFromRecents="true"
+221-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:49:13-46
+222            android:exported="true"
+222-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:50:13-36
+223            android:launchMode="singleTask"
+223-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:51:13-44
+224            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+224-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:52:13-72
+225            <intent-filter>
+225-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:53:13-63:29
+226                <action android:name="android.intent.action.VIEW" />
+226-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:12:13-65
+226-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:12:21-62
+227
+228                <category android:name="android.intent.category.DEFAULT" />
+228-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:38:17-76
+228-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:38:27-73
+229                <category android:name="android.intent.category.BROWSABLE" />
+229-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:39:17-78
+229-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\d5039101f2cfc70f0b3ec213ed34d0a5\transformed\firebase-auth-23.2.0\AndroidManifest.xml:39:27-75
+230
+231                <data
+231-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:14:13-44
+232                    android:host="firebase.auth"
+233                    android:path="/"
+234                    android:scheme="recaptcha" />
+234-->[com.google.firebase:firebase-inappmessaging-display:21.0.2] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\1ead051279221881e57a6f68913df158\transformed\firebase-inappmessaging-display-21.0.2\AndroidManifest.xml:14:19-41
+235            </intent-filter>
+236        </activity>
+237
+238        <service
+238-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+239            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+239-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+240            android:enabled="true"
+240-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+241            android:exported="false" >
+241-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+242            <meta-data
+242-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+243                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+243-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+244                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+244-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+245        </service>
+246
+247        <activity
+247-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+248            android:name="androidx.credentials.playservices.HiddenActivity"
+248-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+249            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+249-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+250            android:enabled="true"
+250-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+251            android:exported="false"
+251-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+252            android:fitsSystemWindows="true"
+252-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+253            android:theme="@style/Theme.Hidden" >
+253-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\8810990f51ea8b8f4c4d5ea126c5cbd7\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+254        </activity>
+255        <activity
+255-->[com.google.android.gms:play-services-auth:21.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5edb54a5f8b123657ec1b7cd87e3bb64\transformed\play-services-auth-21.3.0\AndroidManifest.xml:23:9-27:75
+256            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+256-->[com.google.android.gms:play-services-auth:21.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5edb54a5f8b123657ec1b7cd87e3bb64\transformed\play-services-auth-21.3.0\AndroidManifest.xml:24:13-93
+257            android:excludeFromRecents="true"
+257-->[com.google.android.gms:play-services-auth:21.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5edb54a5f8b123657ec1b7cd87e3bb64\transformed\play-services-auth-21.3.0\AndroidManifest.xml:25:13-46
+258            android:exported="false"
+258-->[com.google.android.gms:play-services-auth:21.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5edb54a5f8b123657ec1b7cd87e3bb64\transformed\play-services-auth-21.3.0\AndroidManifest.xml:26:13-37
+259            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+259-->[com.google.android.gms:play-services-auth:21.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5edb54a5f8b123657ec1b7cd87e3bb64\transformed\play-services-auth-21.3.0\AndroidManifest.xml:27:13-72
+260        <!--
+261            Service handling Google Sign-In user revocation. For apps that do not integrate with
+262            Google Sign-In, this service will never be started.
+263        -->
+264        <service
+264-->[com.google.android.gms:play-services-auth:21.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5edb54a5f8b123657ec1b7cd87e3bb64\transformed\play-services-auth-21.3.0\AndroidManifest.xml:33:9-37:51
+265            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+265-->[com.google.android.gms:play-services-auth:21.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5edb54a5f8b123657ec1b7cd87e3bb64\transformed\play-services-auth-21.3.0\AndroidManifest.xml:34:13-89
+266            android:exported="true"
+266-->[com.google.android.gms:play-services-auth:21.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5edb54a5f8b123657ec1b7cd87e3bb64\transformed\play-services-auth-21.3.0\AndroidManifest.xml:35:13-36
+267            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+267-->[com.google.android.gms:play-services-auth:21.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5edb54a5f8b123657ec1b7cd87e3bb64\transformed\play-services-auth-21.3.0\AndroidManifest.xml:36:13-107
+268            android:visibleToInstantApps="true" />
+268-->[com.google.android.gms:play-services-auth:21.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\5edb54a5f8b123657ec1b7cd87e3bb64\transformed\play-services-auth-21.3.0\AndroidManifest.xml:37:13-48
+269
+270        <receiver
+270-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:29:9-40:20
+271            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+271-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:30:13-78
+272            android:exported="true"
+272-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:31:13-36
+273            android:permission="com.google.android.c2dm.permission.SEND" >
+273-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:32:13-73
+274            <intent-filter>
+274-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:33:13-35:29
+275                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+275-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:34:17-81
+275-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:34:25-78
+276            </intent-filter>
+277
+278            <meta-data
+278-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:37:13-39:40
+279                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+279-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:38:17-92
+280                android:value="true" />
+280-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:39:17-37
+281        </receiver>
+282        <!--
+283             FirebaseMessagingService performs security checks at runtime,
+284             but set to not exported to explicitly avoid allowing another app to call it.
+285        -->
+286        <service
+286-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:46:9-53:19
+287            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+287-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:47:13-82
+288            android:directBootAware="true"
+288-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:48:13-43
+289            android:exported="false" >
+289-->[com.google.firebase:firebase-messaging:24.1.1] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\634e5f763a23f70e7705939c8cb845b5\transformed\firebase-messaging-24.1.1\AndroidManifest.xml:49:13-37
+290            <intent-filter android:priority="-500" >
+290-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:77:13-79:29
+291                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+291-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:78:17-78
+291-->C:\Users\User\AndroidStudioProjects\UnivMate\app\src\main\AndroidManifest.xml:78:25-75
+292            </intent-filter>
+293        </service>
+294
+295        <activity
+295-->[com.google.android.gms:play-services-base:18.6.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\fd5b39ce0e7c41d68e646d76b2c1052a\transformed\play-services-base-18.6.0\AndroidManifest.xml:20:9-22:45
+296            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+296-->[com.google.android.gms:play-services-base:18.6.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\fd5b39ce0e7c41d68e646d76b2c1052a\transformed\play-services-base-18.6.0\AndroidManifest.xml:20:19-85
+297            android:exported="false"
+297-->[com.google.android.gms:play-services-base:18.6.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\fd5b39ce0e7c41d68e646d76b2c1052a\transformed\play-services-base-18.6.0\AndroidManifest.xml:22:19-43
+298            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+298-->[com.google.android.gms:play-services-base:18.6.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\fd5b39ce0e7c41d68e646d76b2c1052a\transformed\play-services-base-18.6.0\AndroidManifest.xml:21:19-78
+299
+300        <provider
+300-->[com.google.firebase:firebase-common:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\dc448d4e70bc8fc7a57a10001c61e76c\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+301            android:name="com.google.firebase.provider.FirebaseInitProvider"
+301-->[com.google.firebase:firebase-common:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\dc448d4e70bc8fc7a57a10001c61e76c\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+302            android:authorities="com.example.univmate.firebaseinitprovider"
+302-->[com.google.firebase:firebase-common:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\dc448d4e70bc8fc7a57a10001c61e76c\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+303            android:directBootAware="true"
+303-->[com.google.firebase:firebase-common:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\dc448d4e70bc8fc7a57a10001c61e76c\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+304            android:exported="false"
+304-->[com.google.firebase:firebase-common:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\dc448d4e70bc8fc7a57a10001c61e76c\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+305            android:initOrder="100" />
+305-->[com.google.firebase:firebase-common:21.0.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\dc448d4e70bc8fc7a57a10001c61e76c\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+306        <provider
+306-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4e87c66078095fb1dc903b0e51d4b1fc\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+307            android:name="androidx.startup.InitializationProvider"
+307-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4e87c66078095fb1dc903b0e51d4b1fc\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+308            android:authorities="com.example.univmate.androidx-startup"
+308-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4e87c66078095fb1dc903b0e51d4b1fc\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+309            android:exported="false" >
+309-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4e87c66078095fb1dc903b0e51d4b1fc\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+310            <meta-data
+310-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4e87c66078095fb1dc903b0e51d4b1fc\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+311                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+311-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4e87c66078095fb1dc903b0e51d4b1fc\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+312                android:value="androidx.startup" />
+312-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\4e87c66078095fb1dc903b0e51d4b1fc\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+313            <meta-data
+313-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\2e87695a0b4280f73d1d9f16da2e392b\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+314                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+314-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\2e87695a0b4280f73d1d9f16da2e392b\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+315                android:value="androidx.startup" />
+315-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\2e87695a0b4280f73d1d9f16da2e392b\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+316            <meta-data
+316-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+317                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+317-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+318                android:value="androidx.startup" />
+318-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+319        </provider>
+320
+321        <receiver
+321-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+322            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+322-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+323            android:directBootAware="false"
+323-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+324            android:enabled="true"
+324-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+325            android:exported="true"
+325-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+326            android:permission="android.permission.DUMP" >
+326-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+327            <intent-filter>
+327-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+328                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+328-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+328-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+329            </intent-filter>
+330            <intent-filter>
+330-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+331                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+331-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+331-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+332            </intent-filter>
+333            <intent-filter>
+333-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+334                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+334-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+334-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+335            </intent-filter>
+336            <intent-filter>
+336-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+337                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+337-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+337-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\f1b147c3f721e63b403b6f239c6b822f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+338            </intent-filter>
+339        </receiver>
+340
+341        <service
+341-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\204e183e079b66a64283021b45c24635\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+342            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+342-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\204e183e079b66a64283021b45c24635\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+343            android:exported="false" >
+343-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\204e183e079b66a64283021b45c24635\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+344            <meta-data
+344-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\204e183e079b66a64283021b45c24635\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+345                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+345-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\204e183e079b66a64283021b45c24635\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+346                android:value="cct" />
+346-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\204e183e079b66a64283021b45c24635\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+347        </service>
+348        <service
+348-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\2e8ca2e831bf56fd04890953004fef9e\transformed\transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+349            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+349-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\2e8ca2e831bf56fd04890953004fef9e\transformed\transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+350            android:exported="false"
+350-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\2e8ca2e831bf56fd04890953004fef9e\transformed\transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+351            android:permission="android.permission.BIND_JOB_SERVICE" >
+351-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\2e8ca2e831bf56fd04890953004fef9e\transformed\transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+352        </service>
+353
+354        <receiver
+354-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\2e8ca2e831bf56fd04890953004fef9e\transformed\transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+355            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+355-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\2e8ca2e831bf56fd04890953004fef9e\transformed\transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+356            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+356-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\2e8ca2e831bf56fd04890953004fef9e\transformed\transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+357        <activity
+357-->[com.google.android.play:core-common:2.0.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\71d886511d99542d1e92176a26c8f334\transformed\core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+358            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+358-->[com.google.android.play:core-common:2.0.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\71d886511d99542d1e92176a26c8f334\transformed\core-common-2.0.3\AndroidManifest.xml:15:13-93
+359            android:exported="false"
+359-->[com.google.android.play:core-common:2.0.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\71d886511d99542d1e92176a26c8f334\transformed\core-common-2.0.3\AndroidManifest.xml:16:13-37
+360            android:stateNotNeeded="true"
+360-->[com.google.android.play:core-common:2.0.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\71d886511d99542d1e92176a26c8f334\transformed\core-common-2.0.3\AndroidManifest.xml:17:13-42
+361            android:theme="@style/Theme.PlayCore.Transparent" />
+361-->[com.google.android.play:core-common:2.0.3] C:\Users\User\AndroidStudioProjects\UnivMate\caches\8.11.1\transforms\71d886511d99542d1e92176a26c8f334\transformed\core-common-2.0.3\AndroidManifest.xml:18:13-62
+362    </application>
+363
+364</manifest>

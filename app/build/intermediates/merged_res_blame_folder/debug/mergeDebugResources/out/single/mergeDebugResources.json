@@ -1,0 +1,318 @@
+[
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_activity_dashboard.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_school.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_school.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\menu_nav_menu.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\menu\\nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_add_circle.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_add_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_description.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_description.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_book.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_book.xml"
+    },
+    {
+        "merged": "com.example.univmate.app-debug-5:/layout_activity_dashboard.xml.flat",
+        "source": "com.example.univmate.app-main-7:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_bg_user_type_tag.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\bg_user_type_tag.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_user_type.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\user_type.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_notifications_off.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_notifications_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\menu_dashboard_menu.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\menu\\dashboard_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_round_button.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\round_button.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_confirm_pass.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\confirm_pass.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_bg_status_tag.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\bg_status_tag.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_no_account.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\no_account.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_nav_header.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\nav_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_logout.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_logout.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_card_gradientbg.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\card_gradientbg.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_back.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\back.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_account_circle.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_account_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_item_request.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\item_request.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_activity_request_detail.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_request_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_work.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_work.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_activity_notification_detail.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_notification_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_circle_unread.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\circle_unread.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_item_notification.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\item_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_profile.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_activity_admin_dashboard.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_admin_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_activity_notification.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_app_logo.jpg.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\app_logo.jpg"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_category.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_id_card.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_id_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_email.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_group.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_camera.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_send.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_gallery.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_dropdown_item.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_empty_status.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_empty_status.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_menu.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_location.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_applogo2.jpg.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\applogo2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_error.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_error.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_calendar.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\layout_activity_new_request.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_new_request.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_chevron_right.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_chevron_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_empty_state.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\empty_state.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-debug-5:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    }
+]

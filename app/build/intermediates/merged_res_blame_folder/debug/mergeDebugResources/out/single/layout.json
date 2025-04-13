@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\activity_notification.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\item_notification.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\item_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\activity_admin_dashboard.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_admin_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\activity_new_request.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_new_request.xml"
+    },
+    {
+        "merged": "com.example.univmate.app-mergeDebugResources-4:/layout/activity_dashboard.xml",
+        "source": "com.example.univmate.app-main-7:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\activity_dashboard.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\activity_signup.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\activity_notification_detail.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_notification_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\dropdown_item.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\item_request.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\item_request.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\activity_request_detail.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_request_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\nav_header.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\nav_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\activity_settings.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-mergeDebugResources-4:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\UnivMate\\daemon\\8.11.1\\com.example.univmate.app-main-7:\\layout\\activity_main.xml"
+    }
+]
