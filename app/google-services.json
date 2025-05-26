@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "66039625822",
+    "project_id": "univmate-fc31d",
+    "storage_bucket": "univmate-fc31d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66039625822:android:564fbd0a55f71b8af01ccf",
+        "android_client_info": {
+          "package_name": "com.example.univmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNEKcmi3AyzxrI1eNU1wTtJ2u5eDfmldc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

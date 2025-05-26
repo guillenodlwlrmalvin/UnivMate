@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+
+    <!-- Updated purple to more academic tone -->
+    <color name="purple_500">#6A4C93</color>
+
+    <!-- Primary color now a professional blue -->
+    <color name="primary">#2E5AAC</color>
+
+    <!-- Card background (unchanged white) -->
+    <color name="card_background">#FFFFFFFF</color>
+
+    <!-- Input text border/icon color -->
+    <color name="input_text">#6C757D</color>
+
+    <!-- Button color now complementary teal -->
+    <color name="button_color">#00B4B3</color>
+
+    <!-- Dark text for contrast (unchanged) -->
+    <color name="button_text">#070000</color>
+
+    <!-- Hint text now medium gray -->
+    <color name="text_hint">#6C757D</color>
+    <color name="success_green">#28A745</color>
+    <color name="warning_yellow">#FFC107</color>
+    <color name="error_red">#DC3545</color>
+
+
+    <color name="black">#000000</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+
+    <color name="lightBackground">#FFF5F5F5</color>
+    <color name="cardBackground">#FFFFFFFF</color>
+    <color name="textPrimary">#FF333333</color>
+    <color name="hint_color">#80000000</color>
+
+    <color name="white_alpha_70">#B3FFFFFF</color>
+    <color name="white_alpha_20">#33FFFFFF</color>
+    <color name="status_pending">#FFA500</color>
+    <color name="status_completed">#4CAF50</color>
+    <color name="urgency_low">#4CAF50</color>
+    <color name="urgency_medium">#FFC107</color>
+    <color name="urgency_high">#F44336</color>
+    <color name="card_stroke">#EEEEEE</color>
+</resources>
